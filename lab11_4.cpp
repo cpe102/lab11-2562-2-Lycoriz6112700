@@ -3,7 +3,7 @@
 
 using namespace std;
 
-template <typename T>
+template <typename T> 
 void mySwap(T &,T &);
 
 
@@ -36,10 +36,8 @@ int main(){
 }
 
 template <typename currentType>
-char mySwap(currentType &j,currentType &k){
+void mySwap(currentType &j,currentType &k){
 	currentType l = j;
 	j = k;
 	k = l;
-	return j;
-
 }
