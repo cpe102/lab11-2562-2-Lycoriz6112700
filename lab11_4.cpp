@@ -3,7 +3,8 @@
 
 using namespace std;
 
-//Declare prototype of function template mySwap() here
+template <typename T>
+void mySwap(T &,T &);
 
 
 int main(){
@@ -34,6 +35,11 @@ int main(){
 	return 0;
 }
 
+template <typename currentType>
+char mySwap(currentType &j,currentType &k){
+	currentType l = j;
+	j = k;
+	k = l;
+	return j;
 
-//Write definition of function template mySwap() here
-
+}
